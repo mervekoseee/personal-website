@@ -6,14 +6,15 @@ function Type() {
     <Typewriter
       options={{
         strings: [
-          "Bilişim Sistemleri Mühendisi",
-          "Frontend Geliştirici",
-          "Web Programlama ve Tasarım",
-          "MERN Yığını Geliştiricisi"
+          "Türkische Tänze für Kinder ",
+          "Ballsportarten für Kinder",
+          "Familientage für Kinder",
+          "Türkische Tänze für Frauen",
+          "Ballsportarten für junge Menschen"
         ],
         autoStart: true,
         loop: true,
-        deleteSpeed: 50,
+        deleteSpeed: 90,
       }}
     />
   );

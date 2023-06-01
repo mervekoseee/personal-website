@@ -1,11 +1,11 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar-g.png";
+import myImg from "../../Assets/home2.png";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub
 } from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import { FaChrome, FaInstagram, FaLinkedinIn, FaMailBulk } from "react-icons/fa";
 
 function Home2() {
   return (
@@ -13,32 +13,19 @@ function Home2() {
       <Container>
         <Row>
           <Col md={8} className="home-about-description">
-            <h1 style={{ fontSize: "2.6em" }}> <span className="purple"> SİZLERE KENDİMİ TANITAYIM </span> </h1>
+            <h1 style={{ fontSize: "2.6em" }}> <span className="purple"> Sei ein Teil davon! </span> </h1>
             <p className="home-about-body">
             
               <i>
-                <b className="purple"> HTML, CSS, Javascript, C# </b>  ile ilgilenmekteyim.
+                 Offene Sportangebote  <b className="purple">Kostenlos</b> in der Heuenhalle!
               </i>
               <br />
               <br />
-              Web tasarımı ve web programlamayı Javascript kütüphanesi olan &nbsp;
+              Sport verbindet!  &nbsp;
               <i>
-                <b className="purple">React </b> teknolojisi kullanarak yapmaktayım.{" "}
-                <b className="purple">
-                  Bootstrap {""}
-                </b>
-                kullanarak tasarımları özelleştiriyorum.
+              Mit Sportangeboten für alle Altersgruppen wollen wir erreichen, dass jeder in unserer Nachbarschaft Spaß haben kann.
               </i>
-              <br />
-              <br />
-              Mümkün olduğunca <b className="purple">Node.js</b> ve
-              <i>
-                <b className="purple">
-                  {" "}
-                 MongoDB
-                </b>
-              </i>
-              &nbsp; ile veritabanı bağlantısı sağlamaktayım.
+              <br />  
              
             </p>
           </Col>
@@ -50,28 +37,29 @@ function Home2() {
         </Row>
         <Row>
           <Col md={12} className="home-about-social">
-            <h1>Benimle İletişime Geçmek İçin</h1>
-   
+            <h1>Kontaktiere uns</h1>
+            Können sie uns über die unten aufgeführten Kontaktdaten kontaktieren.
+            <br/>
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/mervekoseee"
+                  href="https://www.instagram.com/opensportssvgo/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 >
-                  <AiFillGithub />
+                  <FaInstagram />
                 </a>
               </li>
               
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/merve-mira%C3%A7-k%C3%B6se-4906301a8/"
+                  href="mailto: info@svgo-bremen.de"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 >
-                  <FaLinkedinIn />
+                  <FaMailBulk />
                 </a>
               </li>
             </ul>
