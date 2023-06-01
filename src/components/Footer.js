@@ -3,7 +3,8 @@ import { Container, Row, Col } from "react-bootstrap";
 import {
   AiFillGithub
 } from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import { FaInstagram, FaLinkedinIn, FaMailBulk } from "react-icons/fa";
+import logo from "../../src/Assets/svgo.png";
 
 function Footer() {
   let date = new Date();
@@ -12,32 +13,33 @@ function Footer() {
     <Container fluid className="footer">
       <Row>
         <Col md="4" className="footer-copywright">
-          <h3>Merve Miraç Köse</h3>
+          <h3></h3>
         </Col>
         <Col md="4" className="footer-copywright">
-          <h3>Copyright © {year}</h3>
+        <img src={logo}  alt="avatar" />
+          <h3>Open Sports wird von der SVGO organisiert. {year}</h3>
         </Col>
         <Col md="4" className="footer-body">
           <ul className="footer-icons">
             <li className="social-icons">
               <a
-                href="https://github.com/mervekoseee"
-                style={{ color: "white" }}
-                target="_blank" 
-                rel="noopener noreferrer"
+                href="https://www.instagram.com/opensportssvgo/"
+                target="_blank"
+                rel="noreferrer"
+                className="icon-colour  home-social-icons"
               >
-                <AiFillGithub />
+                <FaInstagram/>
               </a>
             </li>
             
             <li className="social-icons">
               <a
-                href="https://www.linkedin.com/in/merve-mira%C3%A7-k%C3%B6se-4906301a8/"
-                style={{ color: "white" }}
-                target="_blank" 
-                rel="noopener noreferrer"
+               href="mailto: info@svgo-bremen.de"
+               target="_blank"
+               rel="noreferrer"
+               className="icon-colour  home-social-icons"
               >
-                <FaLinkedinIn />
+                <FaMailBulk />
               </a>
             </li>
           </ul>

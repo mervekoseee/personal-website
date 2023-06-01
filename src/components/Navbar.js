@@ -48,7 +48,7 @@ function NavBar() {
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
               <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                <AiOutlineHome style={{ marginBottom: "2px" }} /> Anasayfa
+                <AiOutlineHome style={{ marginBottom: "2px" }} /> Homepage
               </Nav.Link>
             </Nav.Item>
 
@@ -58,7 +58,7 @@ function NavBar() {
                 to="/about"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> Hakkımda
+                <AiOutlineUser style={{ marginBottom: "2px" }} /> Über Uns
               </Nav.Link>
             </Nav.Item>
 
