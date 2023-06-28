@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import { ImPointRight } from "react-icons/im";
+import {MapContainer, TileLayer, Marker, Popup} from "react-leaflet";
 
 function AboutCard() {
   return (
@@ -8,65 +9,68 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Ben <span className="purple">Merve Miraç Köse. </span>
+          Das Projekt <span className="purple">Open Sports </span>
+            ist ein Projekt der sozialen Verantwortung, das vom Sportverein 
+            <span className="purple"> SVGO </span> geleitet wird. 
+            <br />
+            So fördert auch der Sportverein SV Grambke-Oslebshausen e.V. (SVGO) mit Angeboten den Zusammenhalt in der vielsprachigen, internationalen Nachbarschaft der Bremer Stadtteile Grambke und Oslebshausen.
+            <br />
+            <br/>
+            <span className="purple"> Unser Sportangebot </span> 
             
-            <br />Kocaeli Üniversitesi Bilişim Sistemleri Mühendisliği, Anadolu Üniversitesi Yönetim Bilişim Sistemleri öğrencisiyim.
-            <br />
-            <br />
-            Çalışma Deneyimlerim:
           </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> LOTEC - Frontend Developer 
+              <ImPointRight /> Türkische Tänze für Kinder 
             </li>
             <li className="about-activity">
-              <ImPointRight /> TatMetal - IT Intern
+              <ImPointRight /> Türkische Tänze für Frauen
             </li>
             <li className="about-activity">
-              <ImPointRight /> LOTEC - IT Intern
+              <ImPointRight /> Ballsportarten für Kinder
             </li>
             <li className="about-activity">
-              <ImPointRight /> Beliz Real Estate - Sales Assistant/Translator
+              <ImPointRight /> Ballsportarten für junge Menschen
+            </li>
+            <li className="about-activity">
+              <ImPointRight /> Familientage für Kinder
             </li>
           </ul>
           <br/>
           <p  style={{ textAlign: "justify" }} >
-            Çalışma hayatım dışında bulunduğum sosyal aktiviteler:
+          Kostenloser Vereinssport für die Nachbarschaft
           </p>
           <footer style={{ color: "rgb(155 126 172)" , textAlign: "justify"}}>
-            - European Solidarity Corps - Gönüllü Sosyal Hizmet
+            Zunächst sind offene Angebote wie Tanzen, Handball, 
+            Akrobatik und Fußball im Außenbereich angedacht, 
+            später sollen auch Sporthallen genutzt werden.
             <br/>
-            - Kocaeli Sharks Bayrak Futbolu - Oyuncu/Yönetim Kurulu Üyeliği
             <br/>
-            - Aiesec - Üyelik
+          Wo sind wir?
+         <br/>
+          Die Sportangebote finden in der Sporthalle Auf den Heuen statt.
+            <br/>
+            <br/>
+            <MapContainer
+      center={[53.134445331287026, 8.730191471544641]}
+      zoom={15}
+      style={{ height: '400px', width: '100%' }
+    }
+    scrollWheelZoom={false}
+    >
+      <TileLayer
+        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        attribution="© OpenStreetMap contributors"
+      />
+      <Marker position={[53.134445331287026, 8.730191471544641]}>
+      <Popup>
+      Wir sind hier!
+    </Popup>
+      </Marker>
+    </MapContainer>
+    
           </footer>
-          <br/>
-          <p  style={{ textAlign: "justify" }} >
-            Kurslarım:
-          </p>
-          <footer style={{ color: "rgb(155 126 172)" , textAlign: "justify"}}>
-            - Kocaeli Büyükşehir Belediyesi - Fransızca Kursu
-            <br/>
-            - Kocaeli Büyükşehir Belediyesi - İngilizce Kursu
-            <br/>
-            - Kocaeli Büyükşehir Belediyesi - Rusça Kursu
-            <br/>
-            - Google Dijital Atölye - Dijital Pazarlamanın Temelleri
-            <br/>
-            - İstanbul İşletme Enstitüsü - Almanca Kursu
-            <br/>
-            - İstanbul İşletme Enstitüsü - Korece Kursu
-            <br/>
-            - İstanbul İşletme Enstitüsü - Python Eğitimi
-            <br/>
-            - İstanbul İşletme Enstitüsü - C# Eğitimi
-            <br/>
-            - İstanbul İşletme Enstitüsü - Dijital Pazarlama Uzmanlığı
-            <br/>
-            - İstanbul İşletme Enstitüsü - Güçlü Marka Oluşturma Stratejileri
-            <br/>
-            - Bilgi Teknolojileri Kurumu - Algoritma ve Veri Yapıları İleri Seviye
-          </footer>
+          
         </blockquote>
       </Card.Body>
     </Card>

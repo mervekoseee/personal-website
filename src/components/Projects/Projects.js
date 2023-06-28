@@ -2,9 +2,10 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import bulut from "../../Assets/Projects/film-dizi-onerilerimiz-43261-6110677431.jpg";
-import urlShortener from "../../Assets/Projects/url-kısaltma-1.png";
-import projetakip from "../../Assets/Projects/proje-ve-saha-yonetim-sistemi.png";
+import teens from "../../Assets/Projects/Teens.png";
+import Dance from "../../Assets/Projects/TurkishDance.png";
+import kids from "../../Assets/Projects/Kids.png";
+import family from "../../Assets/Projects/FamilyDay.png";
 
 function Projects() {
   return (
@@ -12,40 +13,49 @@ function Projects() {
       <Particle />
       <Container>
         <h1 className="project-heading">
-          En Son <strong className="purple"> Çalışmalarım </strong>
+          Unsere <strong className="purple"> Sportangebot </strong>
         </h1>
         <p style={{ color: "white" }}>
-          Üzerine çalıştığım birkaç projem:
+          Wir heißen alle Interessierten willkommen!
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={urlShortener}
+              imgPath={Dance}
               isBlog={false}
-              title="URL Shortener"
-              description="URL kısaltma, orijinal link uzunluğunu belirli araçlarla kısaltarak paylaşabilmenizi sağlıyor. Uzun bir link bağlantısını ortalama 15 karaktere kadar düşürerek kullanıcıya büyük kolaylık sunuyor. İlgili web sayfasına yönlendirme yaparak ek adres işlevi gören kısaltma işlemi, İngilizce de “link shorter” olarak adlandırılıyor."
-              ghLink="https://github.com/mervekoseee/ShortUrlProject"
+              title="Türkische Volkstänze für Frauen und Kinder"
+              description="Ein spezielles Angebot für Frauen mit Volkstänzen, die ein Teil der Türkischen Kultur und Tradition sind."
+              time="Kinder - Montags: 18.30 - 20.00 Uhr  "
+              time2="Frauen - Montags: 20.00 - 21.30 Uhr" 
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={projetakip}
+              imgPath={kids}
               isBlog={false}
-              title="Staj Takip Sistemi"
-              description="Proje, Staj Takip Sistemleri, ekiplerin veya kişilerin iş yönetmesinde ve koordine etmesinde kullanılan araçlardır. Proje akışlarını dijital ortamda yönetme, yürütme ve denetleme imkanı sağlar, ortaya çıkabilecek hata payını azaltır. Kurumlar proje takip sistemlerini kullanarak iş akışını hızlandırır ve iş gücünden tasarruf sağlar. "
-         
+              title="Ballsport für Kids"
+              description="Komm und spiel mit! Wir haben eine gute Zeit, die den Kindern Spaß macht."
+              time= "Samstags 11.00 - 13-00 Uhr"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bulut}
+              imgPath={teens}
               isBlog={false}
-              title="Film & Dizi Bankası"
-              description="Film ve dizi içeriklerini barındıran web uygulaması filmler, diziler, televizyon programları, video oyunları ve internet içerikleri hakkında bilgiler barındıran çevrimiçi bir bilgi bankasıdır. Sinema ve televizyon yapımları hakkında oyuncu kadrosu, yapım ekibi, biyografiler, özetler, ilginç bilgiler, puanlar ve eleştiriler gibi bilgileri içerir."
-              ghLink="https://github.com/mervekoseee/bulutproje/tree/master"
-              demoLink="https://master.d34ymdpv9jnpdx.amplifyapp.com/"              
+              title="Ballsport für Teens"
+              description="Ein kostenloses Angebot für junge Menschen, die sich für alle Formen von Ballsport interessieren. "
+             time= "Donnerstags 17.00 - 18.30 Uhr"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={family}
+              isBlog={false}
+              title="Family Day"
+              description="Kommt und bewegt euch mit uns! Alle Familien sind zum kostenlosen Kinderturnen eingeladen."
+             time= "Sonntags 10.00 - 13.00 Uhr"
             />
           </Col>
         </Row>
